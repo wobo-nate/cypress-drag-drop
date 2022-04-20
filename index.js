@@ -58,7 +58,7 @@ const DragSimulator = {
   },
   drop({ clientX, clientY } = {}) {
     return this.target
-      .trigger('drop', {
+      .trigger('dragend', {
         dataTransfer,
         eventConstructor: 'DragEvent',
         ...this.options.target,
